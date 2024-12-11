@@ -1,1 +1,0 @@
-# tank-human-detection
