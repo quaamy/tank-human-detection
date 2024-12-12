@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+video {
+  border: 2px solid #fff;
+  background: #333;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+/* Arrow Button Styles */
+.triangle::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin: auto;
+  position: relative;
+}
+
+/* Adjusting Triangles for All Directions */
+.triangle.up::before {
+  border-width: 12px 10px 0 10px;
+  border-color: #fff transparent transparent transparent;
+  top: -5px;
+}
+
+.triangle.down::before {
+  border-width: 0 10px 12px 10px;
+  border-color: transparent transparent #fff transparent;
+  top: 5px;
+}
+
+.triangle.left::before {
+  border-width: 10px 0 10px 12px;
+  border-color: transparent transparent transparent #fff;
+  left: -5px;
+}
+
+.triangle.right::before {
+  border-width: 10px 12px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 5px;
+}
+
+.triangle.up-left::before {
+  border-width: 12px 10px 0 0;
+  border-color: #fff transparent transparent transparent;
+  top: -5px;
+  left: -5px;
+}
+
+.triangle.up-right::before {
+  border-width: 12px 0 0 10px;
+  border-color: #fff transparent transparent transparent;
+  top: -5px;
+  right: -5px;
+}
+
+.triangle.down-left::before {
+  border-width: 0 0 12px 10px;
+  border-color: transparent transparent #fff transparent;
+  bottom: -5px;
+  left: -5px;
+}
+
+.triangle.down-right::before {
+  border-width: 0 10px 12px 0;
+  border-color: transparent #fff transparent transparent;
+  bottom: -5px;
+  right: -5px;
+}
+
+/* Button Styles */
+.btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Button Container Spacing */
+.control-panel {
+  gap: 15px;
+}
